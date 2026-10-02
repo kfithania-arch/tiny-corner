@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>for my favorite person ♡</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Georgia,'Times New Roman',serif}body{background:#fff5f7;color:#4b2630;overflow-x:hidden}.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px 18px;position:relative;overflow:hidden;background:linear-gradient(160deg,#fff7f8,#ffe9ef 55%,#fff9f5)}
+.glow{position:absolute;width:280px;height:280px;border-radius:50%;filter:blur(55px);opacity:.5;background:#ffc4d5;top:-90px;right:-70px}.glow2{position:absolute;width:220px;height:220px;border-radius:50%;filter:blur(60px);opacity:.45;background:#ffd9c9;bottom:-80px;left:-60px}
+.card{width:min(470px,100%);position:relative;z-index:2;text-align:center}.tiny{font:600 12px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#a56b78}.title{font-size:clamp(42px,13vw,70px);line-height:.9;margin:14px 0 10px;color:#642f3d;font-weight:400}.subtitle{font-size:15px;color:#8d5d68;margin-bottom:26px}.envelope{width:100%;background:rgba(255,255,255,.7);border:1px solid rgba(120,65,80,.12);border-radius:28px;padding:25px;box-shadow:0 18px 60px rgba(117,55,76,.12);backdrop-filter:blur(10px)}
+.heart{font-size:46px;animation:pulse 1.6s infinite;display:block;margin-bottom:5px}@keyframes pulse{50%{transform:scale(1.1)}}button{border:0;border-radius:999px;padding:13px 22px;background:#713847;color:#fff7f8;font:600 14px Arial,sans-serif;cursor:pointer;box-shadow:0 8px 20px rgba(113,56,71,.2);transition:.2s}button:hover{transform:translateY(-2px)}.letter{max-height:0;overflow:hidden;transition:max-height .8s ease,margin .5s ease;text-align:left}.letter.open{max-height:900px;margin-top:24px}.paper{background:#fffaf7;border-radius:20px;padding:22px 21px;line-height:1.75;font-size:15px;box-shadow:inset 0 0 0 1px rgba(113,56,71,.08)}.sign{text-align:right;margin-top:18px;font-style:italic}.footer{font:12px Arial,sans-serif;color:#a06d78;margin-top:18px}.floating{position:absolute;bottom:-30px;font-size:20px;animation:float 7s linear infinite;opacity:.65}@keyframes float{to{transform:translateY(-110vh) rotate(20deg);opacity:0}}
+.secret{margin-top:15px;font-size:12px;color:#a56b78;cursor:pointer}.secret span{display:none}.secret.show span{display:inline}.extras{display:grid;gap:12px;margin-top:16px;text-align:left}.mini{background:rgba(255,255,255,.72);border:1px solid rgba(120,65,80,.1);border-radius:18px;padding:17px;box-shadow:0 8px 25px rgba(117,55,76,.07)}.mini h3{margin:0 0 8px;font-size:15px;color:#713847}.mini p{margin:0;font:13px/1.65 Arial,sans-serif;color:#805763}.music{display:flex;align-items:center;gap:12px}.disc{width:44px;height:44px;border-radius:50%;background:radial-gradient(circle,#fff 0 10%,#713847 11% 18%,#e9a9bb 19% 100%);animation:spin 4s linear infinite;animation-play-state:paused;flex:none}.disc.playing{animation-play-state:running}@keyframes spin{to{transform:rotate(360deg)}}.music button{padding:10px 16px;font-size:12px}.qrbox{text-align:center}.qrbox img{width:150px;height:150px;border-radius:18px;background:white;padding:8px;margin:5px auto 10px;display:block}.qrnote{font:11px/1.5 Arial,sans-serif;color:#a06d78}
+</style>
+</head>
+<body>
+<main class="page">
+<div class="glow"></div><div class="glow2"></div>
+<div class="card">
+<div class="tiny">03 . 10 . 2026</div>
+<h1 class="title">Happy<br>Boyfriend Day ♡</h1>
+<p class="subtitle">a tiny little corner of the internet, made just for you.</p>
+<section class="envelope">
+<span class="heart">♡</span>
+<p style="margin:0 0 18px;color:#815460">I have something to tell you...</p>
+<button id="open">open my letter</button>
+<div class="letter" id="letter">
+<div class="paper">
+<p>happy boyfriend day, sayanggg 🥹🤍</p>
+<p>makasih yaa udah jadi salah satu orang yang bikin hari-hari aku terasa lebih seru. makasih buat perhatian kecil, candaan, waktu, dan semua hal sederhana yang mungkin menurut kamu biasa aja, tapi buat aku berarti banget.</p>
+<p>aku mungkin nggak selalu pinter nunjukin rasa sayang, kadang malah suka ngambek atau random sendiri 😭 tapi please know that i really appreciate having you in my life. semoga kita bisa terus saling ngerti, saling support, dan bikin banyak memories yang nanti bisa kita ceritain lagi sambil ketawa.</p>
+<p>pokoknya, happy boyfriend day buat kamu. stay being you, okay? ♡</p>
+<p class="sign">with lots of love,<br>your favorite girl ♡</p>
+</div>
+
+</div>
+<div class="extras">
+<div class="mini music">
+<div class="disc" id="disc"></div><div style="flex:1"><h3>our song ♫</h3><p>Aku Milikmu — Dewa 19</p></div><button id="musicBtn">play ♡</button>
+</div>
+<div class="mini"><h3>3 little things i love about you ♡</h3><p>01 — cara kamu bikin aku ketawa. <br>02 — perhatian kecil yang kadang kamu kira sepele. <br>03 — simply… kamu, apa adanya.</p></div>
+<div class="mini"><h3>our tiny timeline ✦</h3><p>from strangers → jadi dekat → jadi tempat cerita → sampai akhirnya punya banyak cerita bareng. and i hope the list keeps going.</p></div>
+<div class="mini qrbox"><h3>scan this, sayang ♡</h3><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASgAAAEoAQAAAADDfFG0AAAB80lEQVR4nO1aMY7DMAwjD/n/l3kDJUdJb+hkCTi7SxMTKCHIEkWXwhfr5xvQQR3Ux7oA+psAEKL8RtS9M5V9S7wgwDHKOEH029yZyr4JRRIAKajkFtfObPZtKFGEBGSKDeE1CXXVB0WUBIq1cU5l3xSvDE0GCy76WjtT2e9HQRks/fFJyFT2LflVDl4KCDrH1s5U9j36K4qWQlJo9ck4n3PZN6LkrgiAoSX8tpvXMNQFiFAeRTrDgEgzitRc9j0oAXBwIEgCGYNRdMnR7PeiIDlKQATro2We/vhEuV7JhZ+CSAmqmmIw+waULFKdWwQV0yNXJCez346yjogaX40JZLgms9+PoqRQENEk6YSLgej4OW8UqfAlVM0cMF2K0exbUCIt9NMvlMLZOfrrhRJhVRqCyyWLvEeiyewbUHEK7aV6dvT5VDyNZr8XxeUN0oVLWewz38Rz3/FCxZQtQuIypMPVOfWrrgvAciYit5QXay5gJ7/Ksn9P33WETLX/ddthc9n39MeYuYHb+CLAeM0uXiNR5X5bXAHLcShHo6nsu/SEtenSEGWK5JmHHsv1vpb7qPeevUPvT2XfjnJWEeG2ZhTbeY1ERf1iDNz+huN/1VXut1XEvqrhOpf9flQ165Hn0fXfz4KOf3+vx99KtvziQf0n1C/bPw4tqtAuzAAAAABJRU5ErkJggg==" alt="heart QR code"><div class="qrnote">QR sementara mengarah ke lagu kita. Kalau web ini sudah punya link publik, QR-nya bisa diganti supaya langsung membuka website.</div></div>
+</div>
+<div class="secret" id="secret">psst... tap me 👀 <span>you are very loved. ♡</span></div>
+</section>
+<div class="footer">made with ♡, just for you</div>
+</div></main>
+<script>
+const open=document.getElementById('open'),letter=document.getElementById('letter'),secret=document.getElementById('secret'),musicBtn=document.getElementById('musicBtn'),disc=document.getElementById('disc');
+open.onclick=()=>{letter.classList.add('open');open.textContent='opened with love ♡';open.disabled=true};
+secret.onclick=()=>secret.classList.toggle('show'); musicBtn.onclick=()=>{window.open('https://www.youtube.com/watch?v=lHC_pKJKKg8','_blank');disc.classList.toggle('playing');musicBtn.textContent=disc.classList.contains('playing')?'open song ♫':'play ♡'};
+for(let i=0;i<14;i++){const h=document.createElement('div');h.className='floating';h.textContent=Math.random()>.45?'♡':'✦';h.style.left=(Math.random()*100)+'%';h.style.animationDelay=(Math.random()*7)+'s';h.style.animationDuration=(5+Math.random()*5)+'s';document.querySelector('.page').appendChild(h)}
+</script>
+</body>
+</html>
