@@ -45,10 +45,50 @@
 <div class="footer">made with ♡, just for you</div>
 </div></main>
 <script>
-const open=document.getElementById('open'),letter=document.getElementById('letter'),secret=document.getElementById('secret'),musicBtn=document.getElementById('musicBtn'),disc=document.getElementById('disc');
-open.onclick=()=>{letter.classList.add('open');open.textContent='opened with love ♡';open.disabled=true};
-secret.onclick=()=>secret.classList.toggle('show'); musicBtn.onclick=()=>{window.open('https://www.youtube.com/watch?v=lHC_pKJKKg8','_blank');disc.classList.toggle('playing');musicBtn.textContent=disc.classList.contains('playing')?'open song ♫':'play ♡'};
-for(let i=0;i<14;i++){const h=document.createElement('div');h.className='floating';h.textContent=Math.random()>.45?'♡':'✦';h.style.left=(Math.random()*100)+'%';h.style.animationDelay=(Math.random()*7)+'s';h.style.animationDuration=(5+Math.random()*5)+'s';document.querySelector('.page').appendChild(h)}
+const open = document.getElementById('open');
+const letter = document.getElementById('letter');
+const secret = document.getElementById('secret');
+const musicBtn = document.getElementById('musicBtn');
+const disc = document.getElementById('disc');
+
+const music = new Audio('tiktok_mp3.mp3');
+music.loop = true;
+music.volume = 0.7;
+
+open.onclick = () => {
+  letter.classList.add('open');
+  open.textContent = 'opened with love ♡';
+  open.disabled = true;
+
+  music.play().then(() => {
+    disc.classList.add('playing');
+    musicBtn.textContent = 'pause ♡';
+  }).catch(() => {});
+};
+
+musicBtn.onclick = () => {
+  if (music.paused) {
+    music.play();
+    disc.classList.add('playing');
+    musicBtn.textContent = 'pause ♡';
+  } else {
+    music.pause();
+    disc.classList.remove('playing');
+    musicBtn.textContent = 'play ♡';
+  }
+};
+
+secret.onclick = () => secret.classList.toggle('show');
+
+for(let i=0;i<14;i++){
+  const h=document.createElement('div');
+  h.className='floating';
+  h.textContent=Math.random()>.45?'♡':'✦';
+  h.style.left=(Math.random()*100)+'%';
+  h.style.animationDelay=(Math.random()*7)+'s';
+  h.style.animationDuration=(5+Math.random()*5)+'s';
+  document.querySelector('.page').appendChild(h);
+}
 </script>
 </body>
 </html>
